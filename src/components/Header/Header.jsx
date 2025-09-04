@@ -6,6 +6,7 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import avatar from "../../assets/images/Avatar.png";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+
 const Header = () => {
   const [show, handleShow] = useState(false);
 
@@ -54,7 +55,8 @@ const Header = () => {
               <NotificationsNoneIcon />
             </li>
             <li>
-              <img className="header__avatar" src={avatar} />
+              <AccountBoxIcon />
+              {/* <img className="header__avatar" src={avatar} /> */}
             </li>
             <li>
               <ArrowDropDownIcon />

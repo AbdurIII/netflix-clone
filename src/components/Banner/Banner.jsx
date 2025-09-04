@@ -9,7 +9,7 @@ const Banner = () => {
     (async () => {
       try {
         const request = await axios.get(requests.fetchNetflixOriginals);
-        console.log(request);
+        //console.log(request);
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
@@ -20,7 +20,7 @@ const Banner = () => {
       }
     })();
   }, []);
-// console.log(movie);
+  // console.log(movie);
   function truncate(str, n) {
     return str?.length > n ? str.slice(0, n - 1) + "..." : str;
   }
@@ -46,9 +46,7 @@ const Banner = () => {
           {truncate(movie?.overview, 150)}
         </h1>
       </div>
-      <div
-        className="banner_fadeBottom"
-      />
+      <div className="banner_fadeBottom" />
     </div>
   );
 };
